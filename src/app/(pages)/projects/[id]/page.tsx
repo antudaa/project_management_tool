@@ -5,7 +5,7 @@ import { BorderlessTableOutlined } from "@ant-design/icons";
 import { Button, Card, Col, Popover, Row } from 'antd';
 import Link from 'next/link';
 
-const ProjectDetailsPage = (id) => {
+const ProjectDetailsPage = (id: string) => {
     const projectId = id.params.id;
 
     const { isFetching, error, data } = useQuery({
